@@ -72,7 +72,7 @@ def solveWordWrap (l, n, M):
       
 print("Word Wrapping Problem\n by Mohammad Namvarpour \nStu.Num:9920354")
 
-n = int(input("Please type in the number of words:/n"))  # n: number of the words in text
+n = int(input("Please type in the number of words:"))  # n: number of the words in text
 wordLenArr = [] # wordLenArr: in this list, each item is the length of a word
 for i in range(n):
     wordLen = len(input("Enter word #{}:".format(i)))
