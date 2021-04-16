@@ -70,12 +70,12 @@ def solveWordWrap (l, n, M):
                 solution [j] = i
     dispSolution(solution , n)
       
-print("Word Wrapping Problem\n by Mohammad Namvarpour \nStu.Num:9920354")
+print("Word Wrapping Problem\nby Mohammad Namvarpour \nStu.Num:9920354")
 
-n = int(input("Please type in the number of words:"))  # n: number of the words in text
+n = int(input("Please type in the number of words: "))  # n: number of the words in text
 wordLenArr = [] # wordLenArr: in this list, each item is the length of a word
 for i in range(n):
-    wordLen = len(input("Enter word #{}:".format(i)))
+    wordLen = len(input("Enter word #{}: ".format(i+1)))
     wordLenArr.append(wordLen)
-maxWidth = int(input("Finally, please enter maximum number of characters possible in a line"))  # maxWidth: maximum characters in a line
+maxWidth = int(input("Finally, please enter maximum number of characters possible in a line: "))  # maxWidth: maximum characters in a line
 solveWordWrap(wordLenArr, n, maxWidth)
